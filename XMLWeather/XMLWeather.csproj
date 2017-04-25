@@ -52,6 +52,7 @@
     <Compile Include="CurrentScreen.Designer.cs">
       <DependentUpon>CurrentScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="Day.cs" />
     <Compile Include="ForecastScreen.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -97,6 +98,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Rain3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Status-weather-clear-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cloud-icon_fkQZ0V_u_M.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stratford.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cloud.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rain-cloud-icon-9.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

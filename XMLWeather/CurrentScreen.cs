@@ -19,6 +19,27 @@ namespace XMLWeather
 
         public void DisplayCurrent()
         {
+            tempLabel.BackColor = Color.FromArgb(100, Color.Black);
+
+            cityOutput.Text = Form1.days[0].location;
+            tempLabel.Text = Convert.ToDouble(Form1.days[0].currentTemp).ToString("#")  + "°"; 
+            dateLabel.Text = DateTime.Now.ToString();
+            windLabel.Text = Form1.days[0].windSpeed;
+
+
+            if (Form1.days[0].precipitation.Contains("Yes"))
+            {
+                weatherStatus.Image = Properties.Resources.rain_cloud;
+            }
+
+            if (Form1.days[0].condition.Contains("clear")  || Form1.days[0].condition.Contains("sun")) //weather check
+            {
+                weatherStatus.Image = Properties.Resources.sunny;
+            }
+            if (Form1.days[0].condition.Contains("cloud")) 
+            {
+                weatherStatus.Image = Properties.Resources.cloud;
+            }
 
         }
 
